@@ -79,6 +79,14 @@ const selectedEditExpenseSelector = createSelector(
 
 const dateRangeSelector = createSelector(financeSelector, (state) => state.date_range);
 
+const customExpenseTypeTileContentsSelector = createSelector(financeSelector, (state) => {
+  return state.expense_types
+    .filter((type) => !type.deleted && type.farm_id)
+    .sort((typeA, typeB) =>
+      typeA.expense_translation_key.localeCompare(typeB.expense_translation_key),
+    );
+});
+
 export {
   salesSelector,
   selectedSaleSelector,
@@ -94,4 +102,5 @@ export {
   dateRangeSelector,
   expenseToDetailSelector,
   tempExpenseToEditSelector,
+  customExpenseTypeTileContentsSelector,
 };
