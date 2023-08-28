@@ -491,7 +491,9 @@
       "TITLE_2": "New Expense (2 of 2)",
       "TITLE": "Add expense",
       "FLOW": "expense creation",
-      "WHICH_TYPES_TO_RECORD": "Which types of expenses would you like to record?"
+      "WHICH_TYPES_TO_RECORD": "Which types of expenses would you like to record?",
+      "ADD_CUSTOM_EXPENSE_TYPE": "Add custom expense type",
+      "MANAGE_CUSTOM_EXPENSE_TYPE": "Manage custom expense types"
     },
     "ADD_MORE_ITEMS": "Add more items",
     "DETAILED_HISTORY": "Detailed History",

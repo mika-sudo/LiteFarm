@@ -490,7 +490,9 @@
       "TITLE_2": "Nuevo gasto (2 de 2)",
       "TITLE": "MISSING",
       "FLOW": "MISSING",
-      "WHICH_TYPES_TO_RECORD": "MISSING"
+      "WHICH_TYPES_TO_RECORD": "MISSING",
+      "ADD_CUSTOM_EXPENSE_TYPE": "MISSING",
+      "MANAGE_CUSTOM_EXPENSE_TYPE": "MISSING"
     },
     "ADD_MORE_ITEMS": "Agrega más unidades",
     "DETAILED_HISTORY": "Historia detallada",

@@ -490,7 +490,9 @@
       "TITLE_2": "Despesa Nova (2 de 2)",
       "TITLE": "MISSING",
       "FLOW": "MISSING",
-      "WHICH_TYPES_TO_RECORD": "MISSING"
+      "WHICH_TYPES_TO_RECORD": "MISSING",
+      "ADD_CUSTOM_EXPENSE_TYPE": "MISSING",
+      "MANAGE_CUSTOM_EXPENSE_TYPE": "MISSING"
     },
     "ADD_MORE_ITEMS": "Adicionar mais itens",
     "DETAILED_HISTORY": "História Detalhada",
