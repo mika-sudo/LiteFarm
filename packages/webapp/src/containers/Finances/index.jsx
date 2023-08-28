@@ -247,7 +247,16 @@ class Finances extends Component {
             sm
             style={{ height: '48px' }}
             onClick={() => {
-              this.props.dispatch(setPersistedPaths(['/expense_categories', '/add_expense']));
+              this.props.dispatch(
+                setPersistedPaths([
+                  '/expense_categories',
+                  '/add_expense',
+                  '/add_expense/manage_custom_expenses',
+                  '/add_expense/add_custom_expense',
+                  '/add_expense/readonly_custom_expense',
+                  '/add_expense/edit_custom_expense',
+                ]),
+              );
               history.push('/expense_categories');
             }}
           >
