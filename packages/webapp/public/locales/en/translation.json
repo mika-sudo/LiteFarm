@@ -498,6 +498,7 @@
     "ADD_EXPENSE": {
       "ALL_FIELDS_REQUIRED": "All fields are required",
       "MIN_ERROR": "Please enter a value greater than ",
+      "NEW_EXPENSE_ITEM": "New expense item",
       "REQUIRED_ERROR": "Expense is required",
       "TITLE_1": "New Expense (1 of 2)",
       "TITLE_2": "New Expense (2 of 2)"

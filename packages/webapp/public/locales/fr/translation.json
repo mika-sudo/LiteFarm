@@ -498,6 +498,7 @@
     "ADD_EXPENSE": {
       "ALL_FIELDS_REQUIRED": "Tous les champs sont requis",
       "MIN_ERROR": "Veuillez saisir une valeur supérieure à ",
+      "NEW_EXPENSE_ITEM": "MISSING",
       "REQUIRED_ERROR": "Une dépense est requise",
       "TITLE_1": "Nouvelle dépense (1 sur 2)",
       "TITLE_2": "Nouvelle dépense (2 sur 2)"
