@@ -1,9 +1,7 @@
 name: Run cypress happy path test
 
 on:
-  pull_request:
-    branches:
-      - integration
+  workflow_dispatch:
 
 jobs:
   build:
