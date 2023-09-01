@@ -76,9 +76,10 @@ jobs:
           NODE_ENV: development
           VITE_API_URL: http://localhost:5000
           CYPRESS_RECORD_KEY: "2630f414-4914-48b0-907d-aa3a9cc6a30b"
-          USER: "0"
+          CYPRESS_USER: 0
         uses: cypress-io/github-action@v4.2.0
         with:
+        
           working-directory: packages/end-to-end
           headed: true
           browser: chrome
