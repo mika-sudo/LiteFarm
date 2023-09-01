@@ -62,7 +62,7 @@ jobs:
           CYPRESS_RECORD_KEY: "2630f414-4914-48b0-907d-aa3a9cc6a30b"
         uses: pnpm/action-setup@v2
         with:
-          version: [7.14.1]
+          version: latest
           working-directory: packages/webapp
           install-command: pnpm install --config.auto-install-peers=true --no-frozen-lockfile --force
           install: true
