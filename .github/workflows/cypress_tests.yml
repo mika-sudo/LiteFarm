@@ -84,8 +84,6 @@ jobs:
         with:
           working-directory: packages/end-to-end
           start: pnpm dev
-          wait-on: "http://localhost:3000"
-          wait-on-timeout: 120
           headed: true
           browser: chrome
           record: true
