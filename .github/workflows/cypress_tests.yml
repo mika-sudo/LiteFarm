@@ -42,14 +42,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # - name: Run API in background
-      #   working-directory: packages/api
-      #   run: |
-      #     npm ci && cd ../shared && npm ci
-      #     cd ../api && npm run migrate:dev:db
-      #     npm run start &
-      #   env:
-      #     PORT: 5000
+      - name: Run API in background
+        working-directory: packages/api
+        run: |
+          npm ci && cd ../shared && npm ci
+          cd ../api && npm run migrate:dev:db
+          npm run start &
+        env:
+          PORT: 5000
 
       - uses: pnpm/action-setup@v2
         with:
@@ -66,14 +66,6 @@ jobs:
           VITE_DO_BUCKET_NAME: litefarm
           NODE_ENV: development
           VITE_API_URL: http://localhost:5000
-        
-        # with:
-        #   version: latest
-        #   working-directory: packages/webapp
-        #   install-command: pnpm install --config.auto-install-peers=true --no-frozen-lockfile --force
-        #   install: true
-        #   start: pnpm dev &
-        #   wait-on: "http://localhost:3000"
           
       - name: Run E2E test
         env:
