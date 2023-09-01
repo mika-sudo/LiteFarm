@@ -83,7 +83,6 @@ jobs:
         uses: cypress-io/github-action@v4.2.0
         with:
           working-directory: packages/end-to-end
-          start: pnpm dev
           headed: true
           browser: chrome
           record: true
