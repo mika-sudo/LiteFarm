@@ -55,7 +55,7 @@ jobs:
         with:
            version: latest
       - name: Run Webapp
-        working-directory: packages/api
+        working-directory: packages/webapp
         run: |
           pnpm install --config.auto-install-peers=true --no-frozen-lockfile --force
           pnpm dev &
