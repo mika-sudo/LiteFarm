@@ -66,10 +66,9 @@ jobs:
           working-directory: packages/webapp
           install-command: pnpm install --config.auto-install-peers=true --no-frozen-lockfile --force
           install: true
-          start: pnpm dev
+          start: pnpm dev &
           wait-on: "http://localhost:3000"
-          wait-on-timeout: 120
-
+          
       - name: Run E2E test
         env:
           VITE_WEATHER_API_KEY: ${{secrets.VITE_WEATHER_API_KEY}}
