@@ -42,14 +42,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Run API in background
-        working-directory: packages/api
-        run: |
-          npm ci && cd ../shared && npm ci
-          cd ../api && npm run migrate:dev:db
-          npm run start &
-        env:
-          PORT: 5000
+      # - name: Run API in background
+      #   working-directory: packages/api
+      #   run: |
+      #     npm ci && cd ../shared && npm ci
+      #     cd ../api && npm run migrate:dev:db
+      #     npm run start &
+      #   env:
+      #     PORT: 5000
 
       - uses: pnpm/action-setup@v2
         with:
