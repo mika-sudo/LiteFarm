@@ -87,21 +87,21 @@ jobs:
           parallel: true
           group: "UI - Chrome"
 
+      - name: set code coverage badge
+        run: npx -p check-code-coverage update-badge --from '${GITHUB_WORKSPACE}/packages/webapp/coverage/coverage-summary.json'
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
       - name: Archive backend logs
+        continue-on-error: true
         uses: actions/upload-artifact@v3
         with:
           working-directory: packages/api
           name: logs
           path: logs
 
-      - name: set code coverage badge
-        run: npx -p check-code-coverage update-badge --from '${GITHUB_WORKSPACE}/packages/webapp/coverage/coverage-summary.json'
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
       - name: Archive code coverage results
         uses: actions/upload-artifact@v3
-        continue-on-error: true
         with:
           name: code-coverage-report
           working-directory: packages/webapp
