@@ -79,6 +79,13 @@ jobs:
           parallel: true
           group: 'UI - Chrome'
           spec: cypress/e2e/happyPath.spec.js
+          
+      - name: Archive backend logs
+        uses: actions/upload-artifact@v3
+        with:
+          working-directory: packages/api
+          name: logs
+          path: logs
 
       - name: set code coverage badge
         run: npx -p check-code-coverage update-badge --from '${GITHUB_WORKSPACE}/packages/webapp/coverage/coverage-summary.json'
