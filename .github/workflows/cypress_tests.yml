@@ -68,7 +68,6 @@ jobs:
           VITE_API_URL: http://localhost:5000
           
       - name: Run E2E test
-        continue-on-error: true
         env:
           VITE_WEATHER_API_KEY: ${{secrets.VITE_WEATHER_API_KEY}}
           VITE_ENV: development
@@ -80,7 +79,6 @@ jobs:
           CYPRESS_USER: 0
         uses: cypress-io/github-action@v4.2.0
         with:
-        
           working-directory: packages/end-to-end
           headed: true
           browser: chrome
@@ -89,6 +87,7 @@ jobs:
           group: "UI - Chrome"
           
       - name: Archive backend logs
+        if: ${{ failure() }}
         uses: actions/upload-artifact@v3
         with:
           working-directory: packages/api
