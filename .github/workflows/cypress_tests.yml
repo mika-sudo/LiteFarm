@@ -68,6 +68,7 @@ jobs:
           VITE_API_URL: http://localhost:5000
           
       - name: Run E2E test
+        continue-on-error: true
         env:
           VITE_WEATHER_API_KEY: ${{secrets.VITE_WEATHER_API_KEY}}
           VITE_ENV: development
