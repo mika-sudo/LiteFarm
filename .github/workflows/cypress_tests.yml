@@ -20,7 +20,7 @@ jobs:
       DEV_DATABASE: pg-litefarm
       DEV_DATABASE_USER: postgres
       DEV_DATABASE_PASSWORD: postgres
-      GOOGLE_API_KEY: AIzaSyC3idOh0JggCRv-ZD_PptTkhOc3r_IGjFw
+      GOOGLE_API_KEY: ${{secrets.GOOGLE_API_KEY}}
       # VITE_GOOGLE_MAPS_API_KEY: ${{secrets.VITE_GOOGLE_MAPS_API_KEY}}
       # VITE_WEATHER_API_KEY: ${{secrets.VITE_WEATHER_API_KEY}}
       NODE_ENV: development
