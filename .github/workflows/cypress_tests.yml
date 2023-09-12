@@ -9,19 +9,19 @@ jobs:
     runs-on: ubuntu-20.04
     timeout-minutes: 30
     env:
-      JWT_INVITE_SECRET: ${{secrets.JWT_INVITE_SECRET}}
-      JWT_RESET_SECRET: ${{secrets.JWT_RESET_SECRET}}
-      JWT_SCHEDULER_SECRET: ${{secrets.JWT_SCHEDULER_SECRET}}
-      JWT_SECRET: ${{secrets.JWT_SECRET}}
-      TEST_USER: ${{secrets.TEST_USER}}
-      TEST_USER_ID: ${{secrets.TEST_USER_ID}}
+      # JWT_INVITE_SECRET: ${{secrets.JWT_INVITE_SECRET}}
+      # JWT_RESET_SECRET: ${{secrets.JWT_RESET_SECRET}}
+      # JWT_SCHEDULER_SECRET: ${{secrets.JWT_SCHEDULER_SECRET}}
+      # JWT_SECRET: ${{secrets.JWT_SECRET}}
+      # TEST_USER: ${{secrets.TEST_USER}}
+      # TEST_USER_ID: ${{secrets.TEST_USER_ID}}
       DEV_DATABASE_HOST: localhost
       DEV_DATABASE: pg-litefarm
       DEV_DATABASE_USER: postgres
       DEV_DATABASE_PASSWORD: postgres
-      GOOGLE_API_KEY: ${{secrets.VITE_GOOGLE_MAPS_API_KEY}}
-      VITE_GOOGLE_MAPS_API_KEY: ${{secrets.VITE_GOOGLE_MAPS_API_KEY}}
-      VITE_WEATHER_API_KEY: ${{secrets.VITE_WEATHER_API_KEY}}
+      GOOGLE_API_KEY: AIzaSyC3idOh0JggCRv-ZD_PptTkhOc3r_IGjFw
+      # VITE_GOOGLE_MAPS_API_KEY: ${{secrets.VITE_GOOGLE_MAPS_API_KEY}}
+      # VITE_WEATHER_API_KEY: ${{secrets.VITE_WEATHER_API_KEY}}
       NODE_ENV: development
 
     strategy:
